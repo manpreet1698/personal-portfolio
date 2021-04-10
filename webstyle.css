@@ -129,7 +129,7 @@ p {
 
 .navbar .home-style:hover {
   color: tomato;
-  transition: 0.5s;
+  transition: 0.3s;
   text-decoration-line: underline;
   text-decoration-thickness: 3px;
 }
