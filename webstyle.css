@@ -146,17 +146,18 @@ a.hover {
   color: #000;
 }
 
-@media (max-width: 965px) {
-  a.home-style {
+@media (max-width: 768px) {
+  .navbar ul {
     display: none;
   }
-  a.logo {
-    flex: auto;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-size: 35px;
-    text-transform: lowercase;
+  .navbar a {
+    width: 100%;
     text-align: center;
+  }
+}
+@media (max-width: 1283px) {
+  .navbar ul {
+    display: none;
   }
 }
 /* Hero section Styles */
@@ -609,7 +610,7 @@ a.hover {
   display: flex;
   font-size: 2rem;
   padding: 1.5rem;
-  padding-left: 90px;
+  padding-left: 80px;
 }
 
 #contact .left .social-info ul {
@@ -634,6 +635,11 @@ a.hover {
 }
 #contact .left .social-info ul li a {
   color: var(--primary-color);
+}
+#contact .social-info ul li:hover {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
 }
 #contact .right .form-wrapper {
   background-color: var(--primary-color);
@@ -715,6 +721,17 @@ a.hover {
     padding: 3rem;
     width: 100%;
     max-width: 100%;
+  }
+  #contact .contact-heading {
+    text-align: center;
+  }
+  #contact .contact-desc {
+    text-align: center;
+  }
+
+  #contact .social-info {
+    width: fit-content;
+    margin: 0 auto;
   }
 }
 
@@ -800,7 +817,7 @@ a.hover {
 #footer {
   background-color: #231b6e;
   color: white;
-  padding: 4rem 0 4rem 0;
+  padding: 2rem 0 2rem 0;
 }
 #footer footer {
   display: flex;
@@ -815,10 +832,6 @@ a.hover {
 #footer footer .col-3,
 #footer footer .col-4 {
   flex: 1;
-}
-
-#footer footer .col-1 .logo img {
-  margin-top: 5rem;
 }
 
 #footer footer .column-heading {
@@ -847,11 +860,9 @@ a.hover {
 }
 
 #footer footer ul li a {
-  display: inline-block;
   width: 100%;
   color: white;
   font-size: 1.7rem;
-  padding: 0.5rem;
 }
 #footer footer b {
   display: inline-block;
@@ -868,25 +879,46 @@ a.hover {
 #footer footer .col-4 ul li a {
   min-width: 50px;
 }
+#footer footer .col-4 ul li {
+  padding: 0.5rem;
+}
 @media only screen and (max-width: 768px) {
   #footer footer {
     flex-direction: column;
-    justify-content: center;
     text-align: center;
+    padding: 2rem;
   }
-  #footer footer .col-1,
+  #footer footer .col-1 {
+    display: none;
+  }
   #footer footer .col-2,
   #footer footer .col-3,
   #footer footer .col-4 {
     width: 100%;
-    margin-bottom: 3rem;
   }
+  #footer footer .col-2 ul li:hover,
+  #footer footer .col-3 ul li:hover,
+  #footer footer .col-4 ul li:hover {
+    background-color: #231b6e;
+  }
+
   #footer footer .col-4 ul {
     width: fit-content;
     margin: 0 auto;
   }
 }
 
+/* References Section */
+#references {
+  padding: 10rem 0;
+}
+#references .container {
+  padding: 2em;
+  text-align: justify;
+  letter-spacing: 2px;
+  font-size: large;
+  letter-spacing: 0em;
+}
 /* copyright Section */
 #copyright {
   padding: 1rem 0;
