@@ -288,7 +288,7 @@ a.hover {
 
 /* Skills Section */
 #skills {
-  padding: 15rem 0;
+  padding: 10rem 0;
 }
 
 #skills .all-items {
@@ -617,6 +617,7 @@ a.hover {
   list-style: none;
   font-size: 2rem;
   gap: 2rem;
+  padding-left: 40px;
 }
 .fa-facebook {
   color: #4267b2;
@@ -796,17 +797,16 @@ a.hover {
     width: 90%;
   }
 }
-/* Footer Section */
 #footer {
   background-color: #231b6e;
   color: white;
-  padding: 10rem 0 5rem 0;
+  padding: 4rem 0 4rem 0;
 }
 #footer footer {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 10rem;
 }
 #footer footer .col-1 {
   flex: 3;
@@ -818,11 +818,7 @@ a.hover {
 }
 
 #footer footer .col-1 .logo img {
-  max-width: 200px;
-  margin-bottom: 2rem;
-}
-#footer footer .col-1 p {
-  color: white;
+  margin-top: 5rem;
 }
 
 #footer footer .column-heading {
@@ -899,9 +895,15 @@ a.hover {
 #copyright p {
   color: white;
   margin: 1rem;
+  text-align: center;
   font-size: 1.4rem;
 }
 @media only screen and (max-width: 768px) {
+  #copyright {
+    padding: 1rem 0;
+    background-color: #1b5d6e;
+    overflow: auto;
+  }
   #copyright p {
     text-align: center;
   }
