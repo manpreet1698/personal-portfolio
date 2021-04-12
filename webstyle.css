@@ -326,6 +326,7 @@ a.hover {
   margin-bottom: 1.5rem;
   font-family: "Poppins";
 }
+
 #skills .item-desc {
   color: var(--secondary-gray);
 }
@@ -357,6 +358,81 @@ a.hover {
     background-color: rgba(0, 255, 115, 0.151);
   }
   #skills .item:nth-child(3) {
+    background-color: #cbbef093;
+  }
+}
+
+#skills2 {
+  padding: 1rem 0;
+  padding-bottom: 10rem;
+}
+
+#skills2 .all-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#skills2 .item {
+  padding: 1.5rem;
+  transition: 0.3s ease-in-out background-color;
+  border-radius: 12px;
+}
+#skills2 .item:nth-child(1):hover {
+  background-color: #e6806e;
+}
+#skills2 .item:nth-child(2):hover {
+  background-color: #ee82b8;
+}
+#skills2 .item:nth-child(3):hover {
+  background-color: #61c7bd;
+}
+#skills2 .item .icon {
+  width: 57px;
+  height: 57px;
+  padding: 1rem;
+  background-color: rgba(255, 0, 0, 0.24);
+  border-radius: 70%;
+  margin-bottom: 1rem;
+}
+#skills2 .item-heading {
+  font-weight: 500;
+  font-size: 2rem;
+  /* text-transform: uppercase; */
+  margin-bottom: 1.5rem;
+  font-family: "Poppins";
+}
+
+#skills2 .item-desc {
+  color: var(--secondary-gray);
+}
+#skills2 .item:nth-child(1) .icon {
+  background-color: tomato;
+}
+#skills2 .item:nth-child(2) .icon {
+  background-color: violet;
+}
+#skills2 .item:nth-child(3) .icon {
+  background-color: turquoise;
+}
+@media only screen and (max-width: 768px) {
+  #skills2 .all-items {
+    flex-direction: column;
+    text-align: center;
+  }
+  #skills2 .item .icon {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  #skills2 .item {
+    margin: 2rem 0;
+  }
+  #skills2 .item:nth-child(1) {
+    background-color: rgb(8 69 241 / 35%);
+  }
+  #skills2 .item:nth-child(2) {
+    background-color: rgba(0, 255, 115, 0.151);
+  }
+  #skills2 .item:nth-child(3) {
     background-color: #cbbef093;
   }
 }
