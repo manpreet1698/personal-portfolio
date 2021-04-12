@@ -427,13 +427,13 @@ a.hover {
     margin: 2rem 0;
   }
   #skills2 .item:nth-child(1) {
-    background-color: rgb(8 69 241 / 35%);
+    background-color: #e6806e;
   }
   #skills2 .item:nth-child(2) {
-    background-color: rgba(0, 255, 115, 0.151);
+    background-color: #ee82b8;
   }
   #skills2 .item:nth-child(3) {
-    background-color: #cbbef093;
+    background-color: #61c7bd;
   }
 }
 
