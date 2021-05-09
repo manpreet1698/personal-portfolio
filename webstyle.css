@@ -67,7 +67,6 @@ p {
   letter-spacing: 0.2rem;
 
   color: transparent;
-  /* -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.103); */
   -webkit-text-stroke: 1.5px #5a24ed2f;
   z-index: -1;
 }
@@ -190,10 +189,6 @@ a.hover {
 
 .nav-active {
   transform: translateX(0%);
-}
-
-.hide-menu {
-  display: none;
 }
 
 @keyframes navFade {
@@ -597,7 +592,6 @@ a.hover {
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 15rem;
-  /* gap: 2rem; */
 }
 #hobbies .item:nth-of-type(even) {
   flex-direction: row-reverse;
@@ -740,44 +734,39 @@ a.hover {
 #contact .left .contact-info ul li a {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
   font-size: 2rem;
   padding: 1.5rem;
+  font-weight: bold;
 }
 
 #contact .left .contact-info ul li:hover {
   background-color: var(--primary-color);
 }
-#contact .left .contact-info ul li:hover .icon {
-  color: white;
-}
-#contact .left .contact-info ul li:hover .text {
-  color: white;
-}
-#contact .left .contact-info ul li a .icon {
-  width: 25px;
-  color: var(--primary-color);
-}
+
 #contact .left .contact-info ul li a .text {
-  color: var(--secondary-gray);
   text-transform: lowercase;
 }
 
+#contact .left .contact-info ul li a .text:hover {
+  color: white;
+}
 #contact .left .contact-info .guelphtext {
   text-transform: none;
   display: flex;
+  justify-content: center;
   font-size: 2rem;
   padding: 1.5rem;
-  padding-left: 80px;
 }
 
 #contact .left .social-info ul {
   display: flex;
+  justify-content: center;
   list-style: none;
-  font-size: 2rem;
-  gap: 2rem;
-  padding-left: 40px;
+}
+#contact .left .social-info ul li {
+  padding: 1rem;
 }
 .fa-facebook {
   color: #4267b2;
@@ -792,13 +781,10 @@ a.hover {
 .fa-linkedin {
   color: #0077b5;
 }
-#contact .left .social-info ul li a {
-  color: var(--primary-color);
-}
+
 #contact .social-info ul li:hover {
   background-color: white;
   border-radius: 10px;
-  padding: 0.5rem;
 }
 #contact .right .form-wrapper {
   background-color: var(--primary-color);
@@ -808,9 +794,7 @@ a.hover {
   border-radius: 12px;
   color: white;
 }
-#contact .right .form-group {
-  margin-bottom: 1rem;
-}
+
 #contact .right .form-group label {
   margin-bottom: 0.5rem;
   display: inline-block;
@@ -827,15 +811,7 @@ a.hover {
   border-radius: 4px;
   overflow: hidden;
 }
-#contact .right .form-group .input-wrapper .icon {
-  font-size: 2rem;
-  height: 100%;
-  width: 50px;
-  background-color: rgb(218, 218, 218);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 #contact .right .form-group .input-wrapper input {
   padding: 1rem;
   height: 100%;
@@ -867,6 +843,7 @@ a.hover {
   border: none;
   cursor: pointer;
 }
+
 @media only screen and (max-width: 768px) {
   #contact .wrapper {
     flex-direction: column-reverse;
@@ -882,10 +859,10 @@ a.hover {
     max-width: 100%;
   }
   #contact .contact-heading {
-    text-align: center;
+    display: none;
   }
   #contact .contact-desc {
-    text-align: center;
+    display: none;
   }
 
   #contact .social-info {
@@ -997,6 +974,11 @@ a.hover {
 #footer footer .col-4 {
   flex: 1;
 }
+#footer .logo img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
 
 #footer footer .column-heading {
   font-family: "Montserrat";
@@ -1029,12 +1011,11 @@ a.hover {
   font-size: 1.7rem;
 }
 #footer footer b {
-  display: inline-block;
-  width: 100%;
+  display: flex;
+  justify-content: center;
   color: white;
   font-size: 1.7rem;
   padding: 2rem;
-  text-align: center;
 }
 #footer footer .col-4 ul {
   display: flex;
@@ -1044,7 +1025,7 @@ a.hover {
   min-width: 50px;
 }
 #footer footer .col-4 ul li {
-  padding: 0.5rem;
+  padding: 1rem;
 }
 @media only screen and (max-width: 768px) {
   #footer footer {
@@ -1061,9 +1042,12 @@ a.hover {
     width: 100%;
   }
   #footer footer .col-2 ul li:hover,
-  #footer footer .col-3 ul li:hover,
-  #footer footer .col-4 ul li:hover {
+  #footer footer .col-3 ul li:hover {
     background-color: #231b6e;
+  }
+
+  #footer footer .col-4 ul li:hover {
+    background-color: white;
   }
 
   #footer footer .col-4 ul {
