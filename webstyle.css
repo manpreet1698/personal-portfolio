@@ -448,7 +448,6 @@ a.hover {
 #skills-scroll {
   padding: 5rem 0;
 }
-
 #skills .all-items {
   display: flex;
   align-items: center;
@@ -479,7 +478,6 @@ a.hover {
 #skills .item-heading {
   font-weight: 500;
   font-size: 2rem;
-  /* text-transform: uppercase; */
   margin-bottom: 1.5rem;
   font-family: "Poppins";
 }
@@ -554,7 +552,7 @@ a.hover {
 #skills2 .item-heading {
   font-weight: 500;
   font-size: 2rem;
-  /* text-transform: uppercase; */
+
   margin-bottom: 1.5rem;
   font-family: "Poppins";
 }
