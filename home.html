@@ -16,12 +16,12 @@
 <div class="navbar">
   <a href="./home.html" class="logo">&lt;myportfolio&gt;</a>
   <ul class="nav">
-    <li><a class="home-style" href="./home.html">Home</a></li>
+    <li><a class="home-style" href="#">Home</a></li>
     <li><a class="home-style" href="#about-scroll">About</a></li>
     <li><a class="home-style" href="#skills-scroll">Skills</a></li>
     <li><a class="home-style" href="#hobbies-scroll">Hobbies</a></li>
     <li><a class="home-style" href="#contact-scroll">Contact</a></li>
-    <li><a class="home-style" href="./Manpreet_Singh_Resume.PDF" target="_blank">Resume</a></li>
+    <li><a class="home-style" href="./ManpreetSinghsResume.PDF" target="_blank">Resume</a></li>
   </ul>
   <div class="burger">
     <div class="line1"></div>
@@ -44,8 +44,8 @@
         </h2>
         <p class="desc">This is my portfolio, feel free to browse around and interact with me.</p>
         <div class="buttons">
-          <a href="./Manpreet_Singh_Resume.PDF" target="_blank"class="primary-btn">Resume</a>
-          <a href="./skills.html">
+          <a href="./ManpreetSinghsResume.PDF" target="_blank"class="primary-btn">Resume</a>
+          <a href="#skills-scroll">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
                 d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
@@ -85,8 +85,8 @@
           <h2 class="slogan">Aspiring CS Student</h2>
           <p class="right-text"> I'm currently pursuing a Honours Bachelor of Computing from the University of Guelph with a major in Computer Science. I am passionate about software enhancement and developing new programs that help bring change to the world! I'm a fast learner and problem-solving is what I enjoy the most.<br><br> I'm currently fluent in C, HTML, and CSS, a touch bit of Javascript, and I've started getting my feet wet with Python recently.<br><br> Some fun facts about me include collecting old coins and banknotes, being afraid of heights and reptiles (especially snakes), and binge-watching the greatest TV show of all time (Game of Thrones).  </p>
           <div class="buttons">
-            <a href="./Manpreet_Singh_Resume.PDF" class="primary-btn" download="">Download Resume</a>
-            <a href="./contact.html" class="primary-btn outline">Get in Touch</a>
+            <a href="./ManpreetSinghsResume.PDF" class="primary-btn" download="">Download Resume</a>
+            <a href="#contact-scroll" class="primary-btn outline">Get in Touch</a>
           </div>
         </div>
       </div>
@@ -280,7 +280,7 @@
               <textarea type="text" id="message" name="message" width="100%" required placeholder="Enter your message here"></textarea>
               <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
             </div>
-            <button type="submit" value="submit">Send</button>
+            <button type="submit" value="submit" onclick="submitForm()">Send</button>
           </form>
         </div>
       </div>
